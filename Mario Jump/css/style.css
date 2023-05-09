@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: black; */
+  }
+  
+  .game-board{
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+    border-bottom: 15px solid #36ff2f;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87dfeb, #e0f6ff );
+  }
+  
+  .pipe {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 80px;
+    /* right: 100%; */
+    /* left: 150px; */
+    animation: pipe-animation 2s infinite linear;
+  }
+  
+  .mario {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    /* transform: translateX(0); */
+
+  }
+  
+  /* Adicione a classe "jump" para animar o salto do Mario */
+  .jump {
+    animation: jump 500ms ease-out;
+  }
+  
+  .clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 10s infinite linear;
+  }
+  .bird{
+    position: absolute;
+    width: 100px;
+    animation: bird-animation 5s infinite linear;
+  }
+
+
+  @keyframes pipe-animation{
+    from {
+      right: 0;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  
+  @keyframes jump {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 180px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+
+  @keyframes clouds-animation {
+    from{
+      right: -550px;
+    }
+    to{
+      right: 100%;
+    }
+  }
+  
+  @keyframes bird-animation {
+    from{
+      right: -1100px;
+    }
+    to{
+      right: 100%;
+    }
+  }

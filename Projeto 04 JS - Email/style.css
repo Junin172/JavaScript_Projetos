@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    padding: 24px;
+    background-color: darkslategrey;
+}
+input, textarea, button{
+    margin: 4px 0;
+    padding: 8px;
+    border-radius: 35px;
+    align-items: center;
+    align-content: center;
+    margin-left: 46%;
+    width: 30%;
+    height: 30px;
+}
+
+button{
+    width: 150px;
+    height: 35px;
+    background-color: #c9cc30;
+}
